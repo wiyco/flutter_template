@@ -19,7 +19,7 @@ class App extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     // TODO: Remove this on prod.
-    debugPrint(_title);
+    // debugPrint(_title);
 
     return MaterialApp(
       title: _title,
