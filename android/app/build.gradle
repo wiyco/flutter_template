@@ -22,6 +22,16 @@ if (flutterVersionName == null) {
     flutterVersionName = '1.0'
 }
 
+// NOTE: Store environment variables that can be retrieved from dart-defines
+def dartDefines = [:];
+if (project.hasProperty('dart-defines')) {
+    // NOTE: Decode dart-defines, which are comma-separated and encoded in Base64, and store them.
+    dartDefines = dartDefines + project.property('dart-defines').split(',').collectEntries { entry ->
+        def pair = new String(entry.decodeBase64(), 'UTF-8').split('=')
+            [(pair.first()): pair.last()]
+    }
+}
+
 android {
     namespace "com.example.flutter_template"
     compileSdk flutter.compileSdkVersion
@@ -42,13 +52,16 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.example.flutter_template"
+        applicationId dartDefines.appId
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
-        minSdkVersion flutter.minSdkVersion
+        minSdkVersion 21
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
+        // NOTE: Set the environment variable `appName` as the application name.
+        // Use in the `android/app/src/main/AndroidManifest.xml` file.
+        resValue "string", "app_name", dartDefines.appName
     }
 
     buildTypes {

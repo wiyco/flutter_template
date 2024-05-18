@@ -41,3 +41,16 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Git ignore files of each environment
+!*.gitignore
+
+# Ignore unused devices
+/linux/
+/macos/
+/windows/
+/web/
+
+# Ignore environment files
+/.env/*
+!/.env/*template.json

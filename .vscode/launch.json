@@ -1,0 +1,41 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  // Flutter configuration: https://docs.flutter.dev/tools/vs-code#run-app-in-debug-profile-or-release-mode
+  // Public token configuration (Mapbox Docs): https://pub.dev/packages/mapbox_maps_flutter#public-token
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Dev",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "debug",
+      "args": [
+        "--dart-define-from-file",
+        ".env/dev.json"
+      ],
+      "showMemoryUsage": true
+    },
+    {
+      "name": "Stage",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile",
+      "args": [
+        "--dart-define-from-file",
+        ".env/stage.json"
+      ]
+    },
+    {
+      "name": "Prod",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release",
+      "args": [
+        "--dart-define-from-file",
+        ".env/prod.json"
+      ]
+    }
+  ]
+}
