@@ -76,10 +76,9 @@ The file is located at `(repo)/ios/PreActions/extract_dart_defines.sh`.
 2. [freezed](#2-freezed)
 3. [json_serializable](#3-json_serializable)
 4. [retrofit](#4-retrofit)
-5. [socket_io_client](#5-socket_io_client)
-6. [flutter_hooks](#6-flutter_hooks)
-7. [hooks_riverpod](#7-hooks_riverpod)
-8. [permission_handler](#8-permission_handler)
+5. [flutter_hooks](#5-flutter_hooks)
+6. [hooks_riverpod](#6-hooks_riverpod)
+7. [permission_handler](#7-permission_handler)
 
 ### 1. [build_runner](https://pub.dev/packages/build_runner)
 
@@ -129,11 +128,11 @@ This package simplifies such cases.
 >
 > [`build_runner`](#1-build_runner) is required.
 
-### 6. [flutter_hooks](https://pub.dev/packages/flutter_hooks)
+### 5. [flutter_hooks](https://pub.dev/packages/flutter_hooks)
 
 For easier state management, refer to [7. hooks_riverpod](#7-hooks_riverpod) for more details.
 
-### 7. [hooks_riverpod](https://pub.dev/packages/hooks_riverpod)
+### 6. [hooks_riverpod](https://pub.dev/packages/hooks_riverpod)
 
 [Riverpod](https://riverpod.dev/docs/introduction/why_riverpod) is a state management package that automatically changes the rendering scope through caching and state handling, thereby optimizing performance.
 
@@ -157,7 +156,7 @@ Article: [riverpod_generator を使ってプロバイダを簡潔な記法で生
 >
 > To use the code generator, [`build_runner`](#1-build_runner) is required.
 
-### 8. [permission_handler](https://pub.dev/packages/permission_handler)
+### 7. [permission_handler](https://pub.dev/packages/permission_handler)
 
 This package is used to check/request permission to access the device's features. (e.g. camera, location, notification, bluetooth, etc...)
 
