@@ -130,13 +130,13 @@ This package simplifies such cases.
 
 ### 5. [flutter_hooks](https://pub.dev/packages/flutter_hooks)
 
-For easier state management, refer to [7. hooks_riverpod](#7-hooks_riverpod) for more details.
+For easier state management, refer to [hooks_riverpod](#6-hooks_riverpod) for more details.
 
 ### 6. [hooks_riverpod](https://pub.dev/packages/hooks_riverpod)
 
 [Riverpod](https://riverpod.dev/docs/introduction/why_riverpod) is a state management package that automatically changes the rendering scope through caching and state handling, thereby optimizing performance.
 
-Riverpod has 3 types of packages.
+Riverpod has three types of packages.
 
 - [riverpod](https://pub.dev/packages/riverpod)
 - [flutter_riverpod](https://pub.dev/packages/flutter_riverpod)
