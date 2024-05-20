@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons:
   freezed_annotation:
   json_annotation:
+  dio:
   retrofit:
   flutter_hooks:
   hooks_riverpod:
