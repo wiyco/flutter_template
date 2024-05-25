@@ -126,7 +126,7 @@ This package simplifies such cases.
 
 > [!TIP]
 >
-> It will be used in combination with [Dio](https://pub.dev/packages/retrofit#define-and-generate-your-api). ([Dio](https://github.com/cfug/dio) is already installed.)
+> It will be used in combination [with Dio](https://pub.dev/packages/retrofit#define-and-generate-your-api). ([Dio](https://github.com/cfug/dio) is already installed)
 
 > [!IMPORTANT]
 >
