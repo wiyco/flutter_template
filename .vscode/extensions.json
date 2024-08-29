@@ -1,7 +1,7 @@
 {
-	"recommendations": [
-		"dart-code.dart-code",
+  "recommendations": [
+    "dart-code.dart-code",
     "dart-code.flutter",
     "robert-brunhage.flutter-riverpod-snippets"
-	]
+  ]
 }
