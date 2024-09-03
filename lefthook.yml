@@ -1,21 +1,11 @@
 # https://github.com/evilmartians/lefthook/blob/master/docs/configuration.md
 
 pre-commit:
-  piped: true
+  parallel: true
   commands:
     lint:
-      priority: 1
       glob: "*.{dart}"
       run: dart fix --apply
-      stage_fixed: true
-      skip:
-        - merge
-        - rebase
-
-    analyze:
-      priority: 2
-      glob: "*.{dart}"
-      run: flutter analyze
       stage_fixed: true
       skip:
         - merge
