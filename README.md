@@ -70,6 +70,12 @@ The file is located at `(repo)/ios/PreActions/extract_dart_defines.sh`.
 > chmod +x ios/PreActions/extract_dart_defines.sh
 > ```
 
+### Git Hooks
+
+In this repository, I use Lefthook for Git Hooks. By using Git Hooks, you can check the code before committing.
+
+Refer to the [Lefthook installation instructions](https://github.com/evilmartians/lefthook/blob/master/docs/install.md) and set up according to your environment.
+
 ## Packages
 
 1. [build_runner](#1-build_runner)
